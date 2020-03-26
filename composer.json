@@ -1,0 +1,37 @@
+{
+    "name": "nicodinus/illuminate-filesystem",
+    "description": "Nicodinus fork of the Illuminate Filesystem package.",
+    "license": "MIT",
+    "homepage": "https://github.com/Nicodinus/illuminate-filesystem",
+    "authors": [
+        {
+            "name": "Aleskei Iarovoi",
+            "email": "nicodinus@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/contracts": "^7.2",
+        "illuminate/support": "^7.2",
+        "symfony/finder": "^5.0"
+    },
+	"require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\Filesystem\\": ""
+        }
+    },
+    },
+    "suggest": {
+        "league/flysystem": "Required to use the Flysystem local and FTP drivers (^2.0).",
+        "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^2.0).",
+        "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^2.0).",
+        "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^2.0).",
+        "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0)"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
